@@ -1,0 +1,37 @@
+default:
+  description: 'Default (production) build.'
+  tasks:
+    - prod
+
+dev:
+  description: 'Default development build (CSS and JS)'
+  tasks:
+    - 'concurrent:devFirst'
+    - 'concurrent:devSecond'
+
+img:
+  description: 'Image minification tasks'
+  tasks:
+    - 'concurrent:imgFirst'
+
+devimg:
+  description: 'Development tasks and image tasks (time intensive)'
+  tasks:
+    - dev
+    - img
+
+prod:
+  description: 'Build a publication-ready site'
+  tasks:
+    - 'concurrent:prodFirst'
+    - 'concurrent:prodSecond'
+    - img
+
+serve:
+  description: 'Similar to development build, with a watch and live reload'
+  tasks:
+    - 'concurrent:devFirst'
+    - 'concurrent:devSecond'
+    - img
+    - connect
+    - watch

@@ -1,1 +1,3 @@
-#Keep this (currently) empty folder in the repo
+# Keep this (currently) empty folder in the repo
+# All subsites live in a sub-folder of the src folder, based on the
+# desired URL slug for the subsite.
