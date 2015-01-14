@@ -27,11 +27,16 @@ prod:
     - 'concurrent:prodSecond'
     - img
 
-serve:
-  description: 'Similar to development build, with a watch and live reload'
+publish:
+  description: 'Copies current contents of dist to destination defined in "publish" option variable'
   tasks:
-    - 'concurrent:devFirst'
-    - 'concurrent:devSecond'
+    - 'copy:publish'
+
+devwatch:
+  description: 'Live development mode with a livereload host on the local machine'
+  tasks:
+    - 'concurrent:devwatchFirst'
+    - 'concurrent:devwatchSecond'
     - img
-    - connect
+    - inject
     - watch
