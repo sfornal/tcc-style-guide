@@ -7,75 +7,42 @@ module.exports = {
     // - HTML
     // - Includes
     // - Fonts
-    dev: {
+    // - Vendor Libraries
+    html: {
         files: [
             { //HTML
                 expand: true,
                 cwd: 'src/',
                 src: ['**/*.{html,htm,shtml,shtm,asp,aspx,php}'],
                 dest: 'dist/'
-            },
-            { //Server Side Includes
-                expand: true,
-                cwd: 'src/',
-                src: ['**/*.inc'],
-                dest: 'dist/'
-            },
-            { //Fonts
-                expand: true,
-                cwd: 'src/',
-                src: ['**/*.{woff,otf,eot,ttf,svg,svgz}'],
-                dest: 'dist/'
-            },
-        ]
+            }]
     },
-
-    //Copy everything not covered by a different build process:
-    // - HTML
-    // - Includes
-    // - Fonts
-    devwatch: {
-        files: [
-            { //Server Side Includes
-                expand: true,
-                cwd: 'src/',
-                src: ['**/*.inc'],
-                dest: 'dist/'
-            },
-            { //Fonts
-                expand: true,
-                cwd: 'src/',
-                src: ['**/*.{woff,otf,eot,ttf,svg,svgz}'],
-                dest: 'dist/'
-            },
-        ]
+    ssi: {
+        files: [{
+            //Server Side Includes
+            expand: true,
+            cwd: 'src/',
+            src: ['**/*.{inc,ssi}'],
+            dest: 'dist/'
+        }]
     },
-
-    //Copy everything not covered by a different build process:
-    // - HTML
-    // - Includes
-    // - Fonts
-    prod: {
-        files: [
-            { //HTML
-                expand: true,
-                cwd: 'src/',
-                src: ['**/*.{html,htm,shtml,shtm,asp,aspx,php}'],
-                dest: 'dist/'
-            },
-            { //Server Side Includes
-                expand: true,
-                cwd: 'src/',
-                src: ['**/*.{inc,ssi}'],
-                dest: 'dist/'
-            },
-            { //Fonts
-                expand: true,
-                cwd: 'src/',
-                src: ['**/*.{woff,otf,eot,ttf,svg,svgz}'],
-                dest: 'dist/'
-            },
-        ]
+    fonts: {
+        files: [{
+            //Fonts
+            expand: true,
+            cwd: 'src/',
+            src: ['**/*.{woff,otf,eot,ttf,svg,svgz}'],
+            dest: 'dist/'
+        }]
+    },
+    vendor: {
+        files: [{
+            //Vendor Libraries
+            expand: true,
+            cwd: 'src/_resources/vendor',
+            src: ['**/*'],
+            dest: 'dist/_resources/vendor'
+        }]
     },
 
     //Copy images not copied by imagemin

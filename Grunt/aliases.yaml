@@ -35,8 +35,7 @@ publish:
 devwatch:
   description: 'Live development mode with a livereload host on the local machine'
   tasks:
-    - 'concurrent:devwatchFirst'
-    - 'concurrent:devwatchSecond'
+    - 'concurrent:devFirst'
+    - 'concurrent:devSecond'
     - img
-    - inject
-    - watch
+    - 'concurrent:devwatch'
