@@ -13,7 +13,7 @@ module.exports = {
             base: 'dist/', //Folder to mount and serve
             keepalive: true, //Keeps the server alive, see notes above
             livereload: true, //Injects a livereload script, used in conjunction with grunt-contrib-watch
-            open: true, //Open the browser automatically
+            open: 'http://localhost:8000', //Open the browser automatically
         },
     }
 };

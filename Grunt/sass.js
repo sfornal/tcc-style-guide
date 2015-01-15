@@ -11,13 +11,15 @@ module.exports = {
         options: {
             debugInfo: true,
             style: 'expanded',
-            lineNumbers: true
+            lineNumbers: true,
+            sourceMap: true
         },
         files:[{
             expand: true,
             cwd: 'src/',
             src: ['**/*.{scss,sass}'],
-            dest: 'src/'
+            dest: 'src/',
+            ext: '.css'
         }]
     },
 
@@ -26,13 +28,14 @@ module.exports = {
             debugInfo: false,
             style: 'compressed',
             lineNumbers: false,
-
+            sourceMap: false
         },
         files:[{
             expand: true,
             cwd: 'src/',
             src: ['**/*.{scss,sass}'],
-            dest: 'src/'
+            dest: 'src/',
+            ext: '.css'
         }]
     }
 };

@@ -3,11 +3,10 @@
 'use strict';
 
 module.exports = function(grunt) {
-
+    var path = require('path');
 	//Time the build tasks. Useful and fun info!
 	require('time-grunt')(grunt);
 
-    /* global path */
     //Load all Grunt tasks automagically
     require('load-grunt-config')(grunt, {
         //Use Just-In-Time task loading for a significant savings

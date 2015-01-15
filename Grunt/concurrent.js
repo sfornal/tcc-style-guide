@@ -23,6 +23,9 @@ module.exports = {
         tasks: ['copy:html', 'copy:ssi', 'copy:fonts', 'copy:vendor', 'uglify', 'autoprefixer:prod']
     },
     devwatch: {
+        options: {
+            logConcurrentOutput: true
+        },
         tasks: ['connect:devwatch', 'watch']
     }
 };
