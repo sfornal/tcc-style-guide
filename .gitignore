@@ -43,6 +43,8 @@ dist/
 includes/
 build/
 tmp/
+src/_resources/vendor/**/*
+!src/_resources/vendor/.keep
 
 # Visual Studio #
 ################################################################################
