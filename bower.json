@@ -1,10 +1,10 @@
 {
-  "name": "project-template-v1",
+  "name": "tcc-style-guide",
   "version": "0.0.1",
-  "homepage": "https://github.com/sfornal/tcc-project-template",
-  "description": "A template for TCC web projects",
+  "homepage": "https://github.com/sfornal/tcc-style-guide",
+  "description": "A site describing our standards and patterns for the TCC Web Communications department",
   "authors": [
-    "Stephen Fornal"
+    "TCC Web Communications"
   ],
   "license": "MIT",
   "private": true,

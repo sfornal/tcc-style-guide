@@ -1,5 +1,5 @@
-//Written by [name] on [date]
-//For the [Project] Project
+//Written by Stephen Fornal on 2015-01-20
+//For the TCC Style Guide Project
 'use strict';
 
 module.exports = function(grunt) {
