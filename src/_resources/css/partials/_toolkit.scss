@@ -1,0 +1,7 @@
+//Toolkit should be loaded after _partials/_variables.scss module
+
+@import 'toolkit/functions';
+@import 'toolkit/mixins';
+@import 'toolkit/normalize';
+@import 'toolkit/globals';
+

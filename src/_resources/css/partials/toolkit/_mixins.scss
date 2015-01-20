@@ -1,0 +1,25 @@
+//Mixins
+//Requires _partials/variables.scss to be imported first!
+
+//Clearfix mixin
+//Uses Nicolas Gallagher Micro-clearfix syntax, IE9+
+@mixin clearfix() {
+    &:after {
+        display: table;
+        content: '';
+        clear: both;
+    }
+}
+
+//Typography block
+//Creates a complete set of font-* properties from one line, with sensible
+//defaults specified.
+@mixin font($face: $primary-font, $size: 1rem, $weight: 400, $style: normal) {
+    font: {
+        family: $face;
+        size: $size;
+        weight: $weight;
+        style: $style;
+    }
+}
+

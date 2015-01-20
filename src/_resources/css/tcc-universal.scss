@@ -1,0 +1,31 @@
+@charset 'utf-8';
+
+@import 'partials/variables';  //Core variables
+@import 'partials/toolkit';    //Core functions, mixins, and tools
+@import 'partials/typography'; //Core content typography
+
+
+html {
+    background: $pure-white;
+    color: $text-black;
+}
+
+.page-wrap {
+    width: 100%;
+    max-width: px2rem(1200px);
+    margin: 0 auto;
+}
+
+h1 {
+    @include font($size: 4rem, $weight: 800);
+    color: $tcc-blue;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+p {
+    &:first-of-type {
+        font-size: 1.4em;
+        font-style: italic;
+    }
+}

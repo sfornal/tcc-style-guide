@@ -1,30 +1,31 @@
 {
-    "name": "tcc-style-guide",
-    "version": "0.0.1",
-    "description": "A site describing our standards and design patterns for the TCC Web Communications department",
-    "homepage": "http://www.tccd.edu/About_TCC/District_Offices/Public_Relations_and_Marketing/",
-    "author": "TCC Web Communications",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/sfornal/tcc-style-guide.git"
-    },
-    "devDependencies": {
-        "grunt": "^0.4.5",
-        "grunt-autoprefixer": "^2.1.0",
-        "grunt-concurrent": "^1.0.0",
-        "grunt-contrib-clean": "^0.6.0",
-        "grunt-contrib-connect": "^0.9.0",
-        "grunt-contrib-copy": "^0.7.0",
-        "grunt-contrib-imagemin": "^0.9.2",
-        "grunt-contrib-jshint": "^0.10.0",
-        "grunt-contrib-uglify": "^0.7.0",
-        "grunt-contrib-watch": "^0.6.1",
-        "grunt-sass": "^0.17.0",
-        "load-grunt-config": "^0.16.0"
-    },
-    "dependencies": {
-        "jshint-stylish": "^1.0.0",
-        "time-grunt": "^1.0.0"
-    },
-    "private": true
+  "name": "tcc-style-guide",
+  "version": "0.0.1",
+  "description": "A site describing our standards and design patterns for the TCC Web Communications department",
+  "homepage": "http://www.tccd.edu/About_TCC/District_Offices/Public_Relations_and_Marketing/",
+  "author": "TCC Web Communications",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sfornal/tcc-style-guide.git"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-autoprefixer": "^2.1.0",
+    "grunt-concurrent": "^1.0.0",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-connect": "^0.9.0",
+    "grunt-contrib-copy": "^0.7.0",
+    "grunt-contrib-cssmin": "^0.11.0",
+    "grunt-contrib-imagemin": "^0.9.2",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-uglify": "^0.7.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-sass": "^0.17.0",
+    "load-grunt-config": "^0.16.0"
+  },
+  "dependencies": {
+    "jshint-stylish": "^1.0.0",
+    "time-grunt": "^1.0.0"
+  },
+  "private": true
 }

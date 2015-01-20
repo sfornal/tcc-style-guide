@@ -13,7 +13,7 @@ module.exports = {
             { //HTML
                 expand: true,
                 cwd: 'src/',
-                src: ['**/*.{html,htm,shtml,shtm,asp,aspx,php}'],
+                src: ['**/*.{html,htm,shtml,shtm,asp,aspx,php}', '!_resources/vendor/**'],
                 dest: 'dist/'
             }]
     },
@@ -40,7 +40,7 @@ module.exports = {
             //Vendor Libraries
             expand: true,
             cwd: 'src/_resources/vendor',
-            src: ['**/*'],
+            src: ['*/dist/*.min.js'],
             dest: 'dist/_resources/vendor'
         }]
     },

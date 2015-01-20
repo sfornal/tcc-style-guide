@@ -1,0 +1,17 @@
+//Global Defaults
+//Things like box-sizing and base font set on body
+
+//Requires _partials/variables.scss to be imported first!
+//Requires _partials/toolkit/_functions.scss to be imported first!
+//Requires _partials/toolkit/_mixins.scss to be imported first!
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    @include font();
+}
+

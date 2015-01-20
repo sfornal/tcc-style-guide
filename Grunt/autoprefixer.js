@@ -1,5 +1,5 @@
 //Written by Stephen Fornal on 2015/01/14
-//Autopreficer adds vendor prefixes, using data from caniuse.com
+//Autoprefixer adds vendor prefixes, using data from caniuse.com
 //It is used in the build process to add prefixes, as well as copying the
 //css to the dist folder
 'use strict';
